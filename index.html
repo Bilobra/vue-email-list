@@ -22,7 +22,7 @@
             </h3>
         </div>
        <ul  class="mail_wrapper"> <!-- @click ="generateMail" -->
-        <li v-for="email in allEmails"
+        <li v-for="email in allEmails" v-if ="allEmails.length === 10"
             class="mail_content" >
             {{email}}
         </li>
