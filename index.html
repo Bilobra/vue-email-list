@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
   <!-- link vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
   <!-- link axios -->
@@ -15,8 +16,14 @@
 <body>
    <div id="app">
     <div class="container">
-       <ul>
-        <li v-for="email in allEmails" >
+        <div class="title">
+            <h3>
+                choose an email
+            </h3>
+        </div>
+       <ul class="mail_wrapper">
+        <li v-for="email in allEmails"
+            class="mail_content" >
             {{email}}
         </li>
        </ul>
