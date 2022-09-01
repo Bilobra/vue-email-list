@@ -3,6 +3,7 @@ const app = new Vue({
     data: {
         randomMail: null,
         allEmails: [],
+        Arraymails:[],
     },
 
     mounted() {
@@ -14,7 +15,12 @@ const app = new Vue({
                 })
         }
     },
-    
+
+    //  methods: {
+    //     pushArray(){
+    //         this.Arraymails.push(this.allEmails)
+    //     }
+    //  },
 
     // methods: {
     //     generateMail(){
